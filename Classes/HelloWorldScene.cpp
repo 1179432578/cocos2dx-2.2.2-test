@@ -7,6 +7,14 @@
 
 USING_NS_CC;
 
+//创建菜单项marco
+#define CREATEBTN(SceneName, posy) \
+label = CCLabelTTF::create(#SceneName" test", "Arial", 24); \
+item = CCMenuItemLabel::create(label, this, menu_selector(HelloWorld::SceneName##Test)); \
+item->setPosition(320, posy); \
+pMenu->addChild(item);
+
+
 // on "init" you need to initialize your instance
 bool HelloWorld::init()
 {
@@ -77,6 +85,9 @@ bool HelloWorld::init()
     item->setPosition(320, 750);
     pMenu->addChild(item);
     
+    //场景变换测试
+    CREATEBTN(SceneTransform, 700)
+    
     return true;
 }
 
@@ -105,7 +116,7 @@ void HelloWorld::addBackButton(CCScene *s){
 }
 
 void HelloWorld::returnCallback(CCObject *pSender){
-    CCDirector::sharedDirector()->replaceScene(HelloWorld::getInstance());
+    CCDirector::sharedDirector()->replaceScene(HelloWorld::create());
 }
 
 void HelloWorld::menuCloseCallback(CCObject* pSender)
@@ -145,7 +156,7 @@ void HelloWorld::drawTest(CCObject *pSender){
 }
 
 /*创建一个场景进行场景变换测试*/
-
+IMPLEMENT(SceneTestScene)
 /*创建一个场景进行粒子特效测试*/
 
 /*创建一个场景进行裁剪测试*/

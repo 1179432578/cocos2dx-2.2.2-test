@@ -31,6 +31,7 @@
 		F60127561D166A2200D7513F /* libcocos2dx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F60127531D16694700D7513F /* libcocos2dx.a */; };
 		F60127591D166CF300D7513F /* scissor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F60127581D166CF300D7513F /* scissor.cpp */; };
 		F601275E1D16801400D7513F /* ControllerScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F601275C1D16801400D7513F /* ControllerScene.cpp */; };
+		F601277B1D16EA6800D7513F /* SceneTransform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F60127791D16EA6800D7513F /* SceneTransform.cpp */; };
 		F6A0C64C1D0BE4D100255599 /* SpriteScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6A0C64A1D0BE4D100255599 /* SpriteScene.cpp */; };
 		F6A0C64F1D0BE55800255599 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6A0C64D1D0BE55800255599 /* HelloWorldScene.cpp */; };
 		F6A0C6551D0BEC6A00255599 /* images in Resources */ = {isa = PBXBuildFile; fileRef = F6A0C6541D0BEC6A00255599 /* images */; };
@@ -90,6 +91,8 @@
 		F601275A1D166D8500D7513F /* scissor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = scissor.h; path = scissor/scissor.h; sourceTree = "<group>"; };
 		F601275C1D16801400D7513F /* ControllerScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ControllerScene.cpp; path = controller/ControllerScene.cpp; sourceTree = "<group>"; };
 		F601275D1D16801400D7513F /* ControllerScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ControllerScene.h; path = controller/ControllerScene.h; sourceTree = "<group>"; };
+		F60127791D16EA6800D7513F /* SceneTransform.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SceneTransform.cpp; path = scene/SceneTransform.cpp; sourceTree = "<group>"; };
+		F601277A1D16EA6800D7513F /* SceneTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SceneTransform.h; path = scene/SceneTransform.h; sourceTree = "<group>"; };
 		F6A0C64A1D0BE4D100255599 /* SpriteScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpriteScene.cpp; sourceTree = "<group>"; };
 		F6A0C64B1D0BE4D100255599 /* SpriteScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteScene.h; sourceTree = "<group>"; };
 		F6A0C64D1D0BE55800255599 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelloWorldScene.cpp; sourceTree = "<group>"; };
@@ -180,6 +183,7 @@
 		BF23D4E2143315EB00657E08 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F60127781D16EA0200D7513F /* scenetransition */,
 				F601275B1D167FEE00D7513F /* controller */,
 				F60127571D166BC400D7513F /* scissor */,
 				F6A0C65A1D0C004D00255599 /* drawprimitives */,
@@ -231,6 +235,15 @@
 				F601275D1D16801400D7513F /* ControllerScene.h */,
 			);
 			name = controller;
+			sourceTree = "<group>";
+		};
+		F60127781D16EA0200D7513F /* scenetransition */ = {
+			isa = PBXGroup;
+			children = (
+				F60127791D16EA6800D7513F /* SceneTransform.cpp */,
+				F601277A1D16EA6800D7513F /* SceneTransform.h */,
+			);
+			name = scenetransition;
 			sourceTree = "<group>";
 		};
 		F6A0C6491D0BE4D100255599 /* sprite */ = {
@@ -355,6 +368,7 @@
 				F6A0C64C1D0BE4D100255599 /* SpriteScene.cpp in Sources */,
 				F6A0C64F1D0BE55800255599 /* HelloWorldScene.cpp in Sources */,
 				F601275E1D16801400D7513F /* ControllerScene.cpp in Sources */,
+				F601277B1D16EA6800D7513F /* SceneTransform.cpp in Sources */,
 				BF4DE6AD138BB89600CF907D /* RootViewController.mm in Sources */,
 				D4ABB4B313B4395300552E6E /* main.m in Sources */,
 				BF23D4E7143315EB00657E08 /* AppDelegate.cpp in Sources */,
