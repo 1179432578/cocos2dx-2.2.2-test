@@ -4,6 +4,7 @@
 #include "cocos2d.h"
 #include "ControllerScene.h"
 #include "SceneTransform.h"
+#include "action.h"
 
 #define TESTSCENE(SceneName) \
 void SceneName##Test(CCObject *pSender){ \
@@ -53,6 +54,9 @@ public:
     
     //scene tranform test
     TESTSCENE(SceneTransform);
+    
+    //action test
+    TESTSCENE(ActionScene);
 };
 
 

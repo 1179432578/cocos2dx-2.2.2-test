@@ -88,6 +88,9 @@ bool HelloWorld::init()
     //场景变换测试
     CREATEBTN(SceneTransform, 700)
     
+    //action test
+    CREATEBTN(ActionScene, 650)
+    
     return true;
 }
 
@@ -109,7 +112,7 @@ void HelloWorld::addBackButton(CCScene *s){
     menu->setPosition(CCPointZero);//菜单锚点被设为0.5 0.5了，改回来
     s->addChild(menu);
     
-    CCMenuItemImage *item = CCMenuItemImage::create("backward.png", "backward.png");
+    CCMenuItemImage *item = CCMenuItemImage::create("home.png", "home.png");
     item->setPosition(ccp(size.width-50, size.height-50));
     menu->addChild(item);
     item->setTarget(this, menu_selector(HelloWorld::returnCallback));
@@ -169,6 +172,7 @@ void HelloWorld::scissorTest(CCObject *pSender){
 IMPLEMENT(ControllerScene)
 
 /*创建一个场景进行动作测试*/
+IMPLEMENT(ActionScene)
 
 /*创建一个场景进行着色测试*/
 
