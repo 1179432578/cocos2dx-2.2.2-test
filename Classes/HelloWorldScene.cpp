@@ -3,7 +3,7 @@
 #include "alpha.h"
 #include "draw.h"
 #include "scissor.h"
-
+#include "UserDefaultScene.h"
 
 USING_NS_CC;
 
@@ -91,6 +91,9 @@ bool HelloWorld::init()
     //action test
     CREATEBTN(ActionScene, 650)
     CREATEBTN(ActionScene2, 600)
+    
+    //data persistent test
+    testUserDefault();
     
     return true;
 }
