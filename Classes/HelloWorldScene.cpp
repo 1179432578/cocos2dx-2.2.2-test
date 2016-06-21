@@ -90,6 +90,7 @@ bool HelloWorld::init()
     
     //action test
     CREATEBTN(ActionScene, 650)
+    CREATEBTN(ActionScene2, 600)
     
     return true;
 }

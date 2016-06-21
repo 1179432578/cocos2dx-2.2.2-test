@@ -34,6 +34,19 @@ public:
     void menuAction9(CCObject *pSender);
     void menuAction10(CCObject *pSender);
     void menuAction11(CCObject *pSender);
+    void menuAction12(CCObject *pSender);
+    void menuAction13(CCObject *pSender);
+    void menuAction14(CCObject *pSender);
+    void menuAction15(CCObject *pSender);
+    void menuAction16(CCObject *pSender);
+    void menuAction17(CCObject *pSender);
+    void menuAction18(CCObject *pSender);
+    void menuAction19(CCObject *pSender);
+    void menuAction20(CCObject *pSender);
+    void fn(CCNode *);
+    void fnd(CCNode *, void *data);
+    void fo(CCObject *);
+    void f();
     
 private:
     CCSprite *m_sp1;

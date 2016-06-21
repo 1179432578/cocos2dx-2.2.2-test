@@ -5,6 +5,7 @@
 #include "ControllerScene.h"
 #include "SceneTransform.h"
 #include "action.h"
+#include "action2.h"
 
 #define TESTSCENE(SceneName) \
 void SceneName##Test(CCObject *pSender){ \
@@ -57,6 +58,9 @@ public:
     
     //action test
     TESTSCENE(ActionScene);
+    
+    //action2 test
+    TESTSCENE(ActionScene2);
 };
 
 

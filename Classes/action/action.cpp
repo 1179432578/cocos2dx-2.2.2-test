@@ -43,10 +43,15 @@ bool ActionScene::init(){
     menu->addChild(img);
     
     //add split symbol
-    CCLabelTTF *split = CCLabelTTF::create("--------------------------------------------------------------------------", "Arial", 25);
-    split->setPosition(ccp(320, 650));
-    this->addChild(split);
+//    CCLabelTTF *split = CCLabelTTF::create("--------------------------------------------------------------------------", "Arial", 25);
+//    split->setPosition(ccp(320, 650));
+//    this->addChild(split);
     
+    CCLabelTTF *lab1 = CCLabelTTF::create("-------------CCActionInterval--------------", "Arial", 25);
+    lab1->setPosition(ccp(320, 1125));
+    this->addChild(lab1);
+    
+    //interval action
     CCLabelTTF *label = CCLabelTTF::create("CCSequence test", "Arial", 24);
     CCMenuItemLabel *item = CCMenuItemLabel::create(label, this, menu_selector(ActionScene::menuAction1));
     item->setPosition(ccp(320, 1100));
@@ -60,7 +65,22 @@ bool ActionScene::init(){
     MENUBTN(CCFadeTo, menuAction7, 800);
     MENUBTN(CCTintTo, menuAction8, 750);
     MENUBTN(CCBezierBy, menuAction9, 700);
- 
+    
+    CCLabelTTF *lab2 = CCLabelTTF::create("-------------CCActionInstant--------------", "Arial", 25);
+    lab2->setPosition(ccp(320, 675));
+    this->addChild(lab2);
+    //CCFlipY
+    //instant action
+    MENUBTN(CCFlipX, menuAction10, 650);
+    MENUBTN(CCPlace, menuAction11, 600);
+    MENUBTN(CCShow, menuAction12, 550);
+    MENUBTN(CCHide, menuAction13, 500);
+    MENUBTN(CCToggleVisibility, menuAction14, 450);
+    MENUBTN(CCRemoveSelf, menuAction15, 400);
+    MENUBTN(CCCallFuncN, menuAction16, 350);
+    MENUBTN(CCCallFuncND, menuAction17, 300);
+    MENUBTN(CCCallFuncO, menuAction18, 250);
+    MENUBTN(CCCallFunc, menuAction19, 200);
 }
 
 void ActionScene::reset(){
@@ -121,16 +141,62 @@ void ActionScene::menuAction9(CCObject *pSender){
     CCBezierBy *bby = CCBezierBy::create(2, cfg);
     m_sp1->runAction(bby);
 }
+//CCReverseTime\CCDelayTime\CCTargetedAction
 
 void ActionScene::menuAction10(CCObject *pSender){
-    //CCReverseTime\CCDelayTime
+    CCFlipX *fip = CCFlipX::create(true);
+    m_sp1->runAction(fip);
 }
 
 void ActionScene::menuAction11(CCObject *pSender){
-    //CCTargetedAction
-
+    CCPlace *pla = CCPlace::create(ccp(320, 500));
+    m_sp1->runAction(pla);
 }
 
-//void ActionScene::menuAction12(CCObject *pSender){
-//    
-//}
+void ActionScene::menuAction12(CCObject *pSender){
+    CCShow *sho = CCShow::create();
+    m_sp1->runAction(sho);
+}
+
+void ActionScene::menuAction13(CCObject *pSender){
+    CCHide *hid = CCHide::create();
+    m_sp1->runAction(hid);
+}
+
+void ActionScene::menuAction14(CCObject *pSender){
+    CCToggleVisibility *tog = CCToggleVisibility::create();
+    m_sp1->runAction(tog);
+}
+
+void ActionScene::menuAction15(CCObject *pSender){
+    CCRemoveSelf *rem =  CCRemoveSelf::create();
+    m_sp1->runAction(rem);
+}
+
+void ActionScene::fn(CCNode *){printf("JUST DO IT");}
+void ActionScene::fnd(CCNode *, void *data){printf("JUST DO IT");}
+void ActionScene::fo(CCObject *){printf("JUST DO IT");}
+void ActionScene::f(){printf("JUST DO IT");}
+void ActionScene::menuAction16(CCObject *pSender){
+    CCCallFuncN *cal = CCCallFuncN::create(NULL, callfuncN_selector(ActionScene::fn));
+    m_sp1->runAction(cal);
+}
+
+void ActionScene::menuAction17(CCObject *pSender){
+    CCCallFuncND *cal = CCCallFuncND::create(this,callfuncND_selector( ActionScene::fnd), NULL);
+    m_sp1->runAction(cal);
+}
+
+void ActionScene::menuAction18(CCObject *pSender){
+    CCCallFuncO *cal = CCCallFuncO::create(this, callfuncO_selector(ActionScene::fo), NULL);
+    m_sp1->runAction(cal);
+}
+
+void ActionScene::menuAction19(CCObject *pSender){
+    CCCallFunc *cal = CCCallFunc::create(this, callfunc_selector( ActionScene::f));
+    m_sp1->runAction(cal);
+}
+
+void ActionScene::menuAction20(CCObject *pSender){
+ 
+}
