@@ -15,6 +15,8 @@
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		299E1EC11D19136600D3B12E /* action2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 299E1EBF1D19136600D3B12E /* action2.cpp */; };
 		299E1EC61D192BBA00D3B12E /* UserDefaultScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 299E1EC41D192BBA00D3B12E /* UserDefaultScene.cpp */; };
+		29F0CB971D1A51E1002BA23C /* extensions in Resources */ = {isa = PBXBuildFile; fileRef = 29F0CB961D1A51E1002BA23C /* extensions */; };
+		29F0CB9E1D1A7429002BA23C /* TouchTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29F0CB9C1D1A7429002BA23C /* TouchTest.cpp */; };
 		BF1373EF128A898400D9F789 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF492D4B1289302400A09262 /* OpenGLES.framework */; };
 		BF1373F0128A899500D9F789 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF492C21128924A800A09262 /* libxml2.dylib */; };
 		BF1373F1128A899E00D9F789 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF492B6912891AC600A09262 /* libz.dylib */; };
@@ -276,6 +278,9 @@
 		299E1EC01D19136600D3B12E /* action2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = action2.h; path = action/action2.h; sourceTree = "<group>"; };
 		299E1EC41D192BBA00D3B12E /* UserDefaultScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UserDefaultScene.cpp; path = datapesistent/UserDefaultScene.cpp; sourceTree = "<group>"; };
 		299E1EC51D192BBA00D3B12E /* UserDefaultScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserDefaultScene.h; path = datapesistent/UserDefaultScene.h; sourceTree = "<group>"; };
+		29F0CB961D1A51E1002BA23C /* extensions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = extensions; sourceTree = "<group>"; };
+		29F0CB9C1D1A7429002BA23C /* TouchTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TouchTest.cpp; path = touch/TouchTest.cpp; sourceTree = "<group>"; };
+		29F0CB9D1D1A7429002BA23C /* TouchTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TouchTest.h; path = touch/TouchTest.h; sourceTree = "<group>"; };
 		781C33B11547F06B00633F88 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		781C33B31547F06B00633F88 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		781C33B51547F06B00633F88 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -813,9 +818,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		29F0CB9B1D1A7406002BA23C /* touch */ = {
+			isa = PBXGroup;
+			children = (
+				29F0CB9C1D1A7429002BA23C /* TouchTest.cpp */,
+				29F0CB9D1D1A7429002BA23C /* TouchTest.h */,
+			);
+			name = touch;
+			sourceTree = "<group>";
+		};
 		784521C214EBA449009D533B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				29F0CB961D1A51E1002BA23C /* extensions */,
 				F6A0C6541D0BEC6A00255599 /* images */,
 				1A1CF3671626CEFF00AFC938 /* ipad */,
 				1A1CF3681626CEFF00AFC938 /* ipadhd */,
@@ -835,6 +850,7 @@
 		BF23D4E2143315EB00657E08 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				29F0CB9B1D1A7406002BA23C /* touch */,
 				299E1EC31D192B3C00D3B12E /* datapesistent */,
 				F615BBD91D183F730004B297 /* action */,
 				F60127781D16EA0200D7513F /* scenetransition */,
@@ -1806,6 +1822,7 @@
 			files = (
 				F6A0C6551D0BEC6A00255599 /* images in Resources */,
 				D4EF94E815BD319200D803EB /* Icon-57.png in Resources */,
+				29F0CB971D1A51E1002BA23C /* extensions in Resources */,
 				D4EF94EA15BD319500D803EB /* Icon-114.png in Resources */,
 				D4EF94EC15BD319B00D803EB /* Icon-72.png in Resources */,
 				F6551F411D19930B00132FB7 /* CCBReaderLoad.lua in Resources */,
@@ -2034,6 +2051,7 @@
 				F65523391D199E3F00132FB7 /* CCActionManager.cpp in Sources */,
 				F655235C1D199E3F00132FB7 /* UIPageView.cpp in Sources */,
 				F60127591D166CF300D7513F /* scissor.cpp in Sources */,
+				29F0CB9E1D1A7429002BA23C /* TouchTest.cpp in Sources */,
 				F65523681D199E3F00132FB7 /* GUIReader.cpp in Sources */,
 				F6551E271D19930A00132FB7 /* ltablib.c in Sources */,
 			);

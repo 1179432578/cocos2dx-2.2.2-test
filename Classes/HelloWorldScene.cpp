@@ -95,6 +95,9 @@ bool HelloWorld::init()
     //data persistent test
     testUserDefault();
     
+    //touch test
+    CREATEBTN(TouchTest, 550)
+
     return true;
 }
 

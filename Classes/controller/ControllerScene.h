@@ -11,7 +11,10 @@
 
 #include <stdio.h>
 #include "cocos2d.h"
+#include "cocos-ext.h"
+
 USING_NS_CC;
+USING_NS_CC_EXT;
 
 class ControllerScene : public CCLayer{
 public:
@@ -24,6 +27,10 @@ public:
     void menuItemClick1(CCObject *pSender);
     
     void btnOk(CCObject *pSender);
+    
+    void btnClick(CCObject*, CCControlEvent);
+    
+    void valueChanged(CCObject*, CCControlEvent);
 private:
     CCMenuItemLabel *m_btn;
     CCTextFieldTTF *m_texField;

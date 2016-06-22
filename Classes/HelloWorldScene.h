@@ -6,6 +6,7 @@
 #include "SceneTransform.h"
 #include "action.h"
 #include "action2.h"
+#include "TouchTest.h"
 
 #define TESTSCENE(SceneName) \
 void SceneName##Test(CCObject *pSender){ \
@@ -61,6 +62,10 @@ public:
     
     //action2 test
     TESTSCENE(ActionScene2);
+    
+    //touch test
+    TESTSCENE(TouchTest);
+
 };
 
 
