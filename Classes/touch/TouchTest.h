@@ -11,24 +11,29 @@
 
 #include <stdio.h>
 #include "cocos2d.h"
+#include <string>
 
 USING_NS_CC;
 
 class Layer : public CCLayerColor{
 public:
     virtual bool ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent){
-        printf("%d ccTouchBegan\n", this);
+        printf("%d ccTouchBegan \n", this);
+        printf("name: %s\n", name.c_str());
         
-        return false;
+        return true;
     }
     virtual void ccTouchMoved(CCTouch *pTouch, CCEvent *pEvent){
         printf("%d ccTouchMoved\n", this);
+        printf("name: %s\n", name.c_str());
     }
     virtual void ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent){
         printf("%d ccTouchEnded\n", this);
+        printf("name: %s\n", name.c_str());
     }
     virtual void ccTouchCancelled(CCTouch *pTouch, CCEvent *pEvent){
         printf("%d ccTouchCancelled\n", this);
+        printf("name: %s\n", name.c_str());
     }
     
     virtual void ccTouchesBegan(CCSet *pTouches, CCEvent *pEvent){
@@ -46,6 +51,11 @@ public:
 
     
     CREATE_FUNC(Layer);
+    
+    static Layer* create(const CCRect &rt, const char *name);
+    
+private:
+    std::string name;
 };
 
 class TouchTest : public CCLayer{
