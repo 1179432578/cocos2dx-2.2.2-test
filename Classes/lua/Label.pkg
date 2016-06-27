@@ -1,0 +1,16 @@
+$#include "Label.h"
+
+enum FontSize{
+    SMALL = 10,
+    MEDIUM = 20,
+    BIG = 30,
+};
+
+class Label : public CCLabelTTF{
+    Label();
+    virtual ~Label();
+    
+    static Label* create(const char *label, FontSize size);
+    
+    void setPosition(const CCPoint &point);
+};

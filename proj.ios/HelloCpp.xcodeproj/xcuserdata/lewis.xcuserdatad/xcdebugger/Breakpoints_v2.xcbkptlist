@@ -2,4 +2,127 @@
 <Bucket
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Classes/plist/PlistTest.h"
+            timestampString = "488741030.047454"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PlistTest::~PlistTest()"
+                  moduleName = "HelloCpp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lewis/Desktop/cocos2dx-2.2.2pak/project/HelloCpp/Classes/plist/PlistTest.h"
+                  timestampString = "488741030.104561"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PlistTest::~PlistTest()"
+                  moduleName = "HelloCpp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lewis/Desktop/cocos2dx-2.2.2pak/project/HelloCpp/Classes/plist/PlistTest.h"
+                  timestampString = "488741030.105256"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "non-virtual thunk to PlistTest::~PlistTest()"
+                  moduleName = "HelloCpp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lewis/Desktop/cocos2dx-2.2.2pak/project/HelloCpp/Classes/plist/PlistTest.h"
+                  timestampString = "488741030.105786"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "non-virtual thunk to PlistTest::~PlistTest()"
+                  moduleName = "HelloCpp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lewis/Desktop/cocos2dx-2.2.2pak/project/HelloCpp/Classes/plist/PlistTest.h"
+                  timestampString = "488741030.106226"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PlistTest::PlistTest()"
+                  moduleName = "HelloCpp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lewis/Desktop/cocos2dx-2.2.2pak/project/HelloCpp/Classes/plist/PlistTest.h"
+                  timestampString = "488741030.106542"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PlistTest::PlistTest()"
+                  moduleName = "HelloCpp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lewis/Desktop/cocos2dx-2.2.2pak/project/HelloCpp/Classes/plist/PlistTest.h"
+                  timestampString = "488741030.10682"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PlistTest::~PlistTest()"
+                  moduleName = "HelloCpp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lewis/Desktop/cocos2dx-2.2.2pak/project/HelloCpp/Classes/plist/PlistTest.h"
+                  timestampString = "488741030.107094"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "15">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
