@@ -7,6 +7,7 @@
 #include "action.h"
 #include "action2.h"
 #include "TouchTest.h"
+#include "PlistTest.h"
 
 #define TESTSCENE(SceneName) \
 void SceneName##Test(CCObject *pSender){ \
@@ -65,6 +66,9 @@ public:
     
     //touch test
     TESTSCENE(TouchTest);
+    
+    //plist test
+    TESTSCENE(PlistTest);
 
 };
 

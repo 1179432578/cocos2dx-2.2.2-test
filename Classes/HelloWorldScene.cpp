@@ -97,6 +97,9 @@ bool HelloWorld::init()
     
     //touch test
     CREATEBTN(TouchTest, 550)
+    
+    //plist test
+    CREATEBTN(PlistTest, 500)
 
     return true;
 }
@@ -191,8 +194,8 @@ IMPLEMENT(ActionScene)
 
 /*创建一个场景进行精灵动作测试*/
 
-
-
+/*创建一个场景进行Plist测试*/
+IMPLEMENT(PlistTest)
 
 
 

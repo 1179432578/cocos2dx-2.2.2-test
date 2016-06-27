@@ -15,6 +15,7 @@
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		299E1EC11D19136600D3B12E /* action2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 299E1EBF1D19136600D3B12E /* action2.cpp */; };
 		299E1EC61D192BBA00D3B12E /* UserDefaultScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 299E1EC41D192BBA00D3B12E /* UserDefaultScene.cpp */; };
+		29EFDD231D212CA700B3B4D3 /* PlistTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29EFDD211D212CA700B3B4D3 /* PlistTest.cpp */; };
 		29F0CB971D1A51E1002BA23C /* extensions in Resources */ = {isa = PBXBuildFile; fileRef = 29F0CB961D1A51E1002BA23C /* extensions */; };
 		29F0CB9E1D1A7429002BA23C /* TouchTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29F0CB9C1D1A7429002BA23C /* TouchTest.cpp */; };
 		BF1373EF128A898400D9F789 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF492D4B1289302400A09262 /* OpenGLES.framework */; };
@@ -278,6 +279,8 @@
 		299E1EC01D19136600D3B12E /* action2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = action2.h; path = action/action2.h; sourceTree = "<group>"; };
 		299E1EC41D192BBA00D3B12E /* UserDefaultScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UserDefaultScene.cpp; path = datapesistent/UserDefaultScene.cpp; sourceTree = "<group>"; };
 		299E1EC51D192BBA00D3B12E /* UserDefaultScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserDefaultScene.h; path = datapesistent/UserDefaultScene.h; sourceTree = "<group>"; };
+		29EFDD211D212CA700B3B4D3 /* PlistTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PlistTest.cpp; path = plist/PlistTest.cpp; sourceTree = "<group>"; };
+		29EFDD221D212CA700B3B4D3 /* PlistTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlistTest.h; path = plist/PlistTest.h; sourceTree = "<group>"; };
 		29F0CB961D1A51E1002BA23C /* extensions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = extensions; sourceTree = "<group>"; };
 		29F0CB9C1D1A7429002BA23C /* TouchTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TouchTest.cpp; path = touch/TouchTest.cpp; sourceTree = "<group>"; };
 		29F0CB9D1D1A7429002BA23C /* TouchTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TouchTest.h; path = touch/TouchTest.h; sourceTree = "<group>"; };
@@ -818,6 +821,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		29EFDD201D212C2E00B3B4D3 /* plist  */ = {
+			isa = PBXGroup;
+			children = (
+				29EFDD211D212CA700B3B4D3 /* PlistTest.cpp */,
+				29EFDD221D212CA700B3B4D3 /* PlistTest.h */,
+			);
+			name = "plist ";
+			sourceTree = "<group>";
+		};
 		29F0CB9B1D1A7406002BA23C /* touch */ = {
 			isa = PBXGroup;
 			children = (
@@ -850,6 +862,7 @@
 		BF23D4E2143315EB00657E08 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				29EFDD201D212C2E00B3B4D3 /* plist  */,
 				29F0CB9B1D1A7406002BA23C /* touch */,
 				299E1EC31D192B3C00D3B12E /* datapesistent */,
 				F615BBD91D183F730004B297 /* action */,
@@ -1870,6 +1883,7 @@
 				F65520E31D1995AD00132FB7 /* SkeletonData.c in Sources */,
 				F6551E141D19930A00132FB7 /* ldebug.c in Sources */,
 				F65520CB1D1995AD00132FB7 /* PolygonBatch.cpp in Sources */,
+				29EFDD231D212CA700B3B4D3 /* PlistTest.cpp in Sources */,
 				F6551E0D1D19930A00132FB7 /* CCLuaObjcBridge.mm in Sources */,
 				F6551E231D19930A00132FB7 /* lstate.c in Sources */,
 				F6551F871D1993D600132FB7 /* CCBValue.cpp in Sources */,
