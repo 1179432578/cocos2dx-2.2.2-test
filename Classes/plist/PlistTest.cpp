@@ -27,6 +27,18 @@ bool PlistTest::init(){
     btn->setPosition(ccp(320, 1000));
     this->addChild(btn);
     btn->addTargetWithActionForControlEvents(this, cccontrol_selector(PlistTest::btnClick), CCControlEventTouchDown);
+    
+    btn = CCControlButton::create("create sprite\nby spriteframe", "Arial", 24);
+    btn->setPosition(ccp(320, 900));
+    this->addChild(btn);
+    btn->addTargetWithActionForControlEvents(this, cccontrol_selector(PlistTest::btnClickCreateSpriteBySpriteFrame), CCControlEventTouchDown);
+    
+    btn = CCControlButton::create("test CCDictionary\nwritetofile", "Arial", 24);
+    btn->setPosition(ccp(320, 800));
+    this->addChild(btn);
+    btn->addTargetWithActionForControlEvents(this, cccontrol_selector(PlistTest::btnClickUseDictionary), CCControlEventTouchDown);
+    
+    return true;
 }
 
 void PlistTest::btnClick(CCObject* pSender, CCControlEvent event){
@@ -41,4 +53,23 @@ void PlistTest::btnClick(CCObject* pSender, CCControlEvent event){
         printf("%s\n", child->GetText());
         child = child->NextSiblingElement();
     }
+}
+
+void PlistTest::btnClickCreateSpriteBySpriteFrame(CCObject* pSender, CCControlEvent event){
+    CCSpriteFrameCache::sharedSpriteFrameCache()->addSpriteFramesWithFile("shoe.plist");
+    CCSprite *sp = CCSprite::createWithSpriteFrameName("1.png");
+    sp->setPosition(ccp(320, 500));
+    this->addChild(sp);
+}
+
+void PlistTest::btnClickUseDictionary(CCObject* pSender, CCControlEvent event){
+    CCDictionary *dict = CCDictionary::create();
+    dict->setObject(new CCString("12"), "integer");
+    dict->setObject(new CCString("21.34"), "float");
+    dict->setObject(new CCString("true"), "bool");
+    dict->setObject(new CCString("hello world"), "string");
+    string path =  CCFileUtils::sharedFileUtils()->getWritablePath();
+    printf("%s", path.c_str());
+    path += "test.xml";
+    dict->writeToFile(path.c_str());
 }

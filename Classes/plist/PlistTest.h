@@ -26,6 +26,11 @@ public:
     bool init();
     
     void btnClick(CCObject* pSender, CCControlEvent event);
+    
+    void btnClickCreateSpriteBySpriteFrame(CCObject* pSender, CCControlEvent event);
+    
+    void btnClickUseDictionary(CCObject* pSender, CCControlEvent event);
+
 private:
 };
 
