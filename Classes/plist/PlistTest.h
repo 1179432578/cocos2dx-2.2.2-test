@@ -30,6 +30,10 @@ public:
     void btnClickCreateSpriteBySpriteFrame(CCObject* pSender, CCControlEvent event);
     
     void btnClickUseDictionary(CCObject* pSender, CCControlEvent event);
+    
+    void btnClickTestRC(CCObject* pSender, CCControlEvent event);
+    
+    void btnClickTestSpriteFrame(CCObject* pSender, CCControlEvent event);
 
 private:
 };
