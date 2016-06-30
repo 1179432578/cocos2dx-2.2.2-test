@@ -34,8 +34,6 @@ public:
     void btnClickTestRC(CCObject* pSender, CCControlEvent event);
     
     void btnClickTestSpriteFrame(CCObject* pSender, CCControlEvent event);
-
-private:
 };
 
 #endif /* PlistTest_hpp */

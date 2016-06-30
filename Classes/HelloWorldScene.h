@@ -8,6 +8,7 @@
 #include "action2.h"
 #include "TouchTest.h"
 #include "PlistTest.h"
+#include "TilemapTest.h"
 
 #define TESTSCENE(SceneName) \
 void SceneName##Test(CCObject *pSender){ \
@@ -69,7 +70,9 @@ public:
     
     //plist test
     TESTSCENE(PlistTest);
-
+    
+    //tilemap test
+    TESTSCENE(TilemapTest);
 };
 
 

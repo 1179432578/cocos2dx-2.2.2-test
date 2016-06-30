@@ -91,6 +91,8 @@ bool AppDelegate::applicationDidFinishLaunching() {
     CCFileUtils::sharedFileUtils()->setSearchPaths(searchPath);
     CCFileUtils::sharedFileUtils()->addSearchPath("images");
     CCFileUtils::sharedFileUtils()->addSearchPath("extensions");
+    CCFileUtils::sharedFileUtils()->addSearchPath("tilemap");
+
 	
     // turn on display FPS
     pDirector->setDisplayStats(true);

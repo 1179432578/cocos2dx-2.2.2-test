@@ -5,6 +5,7 @@
 #include "scissor.h"
 #include "UserDefaultScene.h"
 
+
 USING_NS_CC;
 
 //创建菜单项marco
@@ -100,7 +101,10 @@ bool HelloWorld::init()
     
     //plist test
     CREATEBTN(PlistTest, 500)
-
+    
+    //tilemap test
+    CREATEBTN(TilemapTest, 450)
+    
     return true;
 }
 

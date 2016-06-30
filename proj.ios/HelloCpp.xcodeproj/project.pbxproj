@@ -242,6 +242,8 @@
 		F655236B1D199E3F00132FB7 /* TriggerBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F65523301D199E3F00132FB7 /* TriggerBase.cpp */; };
 		F655236C1D199E3F00132FB7 /* TriggerMng.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F65523321D199E3F00132FB7 /* TriggerMng.cpp */; };
 		F655236D1D199E3F00132FB7 /* TriggerObj.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F65523341D199E3F00132FB7 /* TriggerObj.cpp */; };
+		F65F17E61D25559E007B0606 /* tilemap in Resources */ = {isa = PBXBuildFile; fileRef = F65F17E51D25559E007B0606 /* tilemap */; };
+		F65F17EA1D25564E007B0606 /* TilemapTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F65F17E81D25564E007B0606 /* TilemapTest.cpp */; };
 		F6A0C64C1D0BE4D100255599 /* SpriteScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6A0C64A1D0BE4D100255599 /* SpriteScene.cpp */; };
 		F6A0C64F1D0BE55800255599 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6A0C64D1D0BE55800255599 /* HelloWorldScene.cpp */; };
 		F6A0C6551D0BEC6A00255599 /* images in Resources */ = {isa = PBXBuildFile; fileRef = F6A0C6541D0BEC6A00255599 /* images */; };
@@ -726,6 +728,9 @@
 		F65523331D199E3F00132FB7 /* TriggerMng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriggerMng.h; sourceTree = "<group>"; };
 		F65523341D199E3F00132FB7 /* TriggerObj.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TriggerObj.cpp; sourceTree = "<group>"; };
 		F65523351D199E3F00132FB7 /* TriggerObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriggerObj.h; sourceTree = "<group>"; };
+		F65F17E51D25559E007B0606 /* tilemap */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tilemap; sourceTree = "<group>"; };
+		F65F17E81D25564E007B0606 /* TilemapTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TilemapTest.cpp; path = tilemap/TilemapTest.cpp; sourceTree = "<group>"; };
+		F65F17E91D25564E007B0606 /* TilemapTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TilemapTest.h; path = tilemap/TilemapTest.h; sourceTree = "<group>"; };
 		F6A0C64A1D0BE4D100255599 /* SpriteScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpriteScene.cpp; sourceTree = "<group>"; };
 		F6A0C64B1D0BE4D100255599 /* SpriteScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteScene.h; sourceTree = "<group>"; };
 		F6A0C64D1D0BE55800255599 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelloWorldScene.cpp; sourceTree = "<group>"; };
@@ -842,6 +847,7 @@
 		784521C214EBA449009D533B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F65F17E51D25559E007B0606 /* tilemap */,
 				29F0CB961D1A51E1002BA23C /* extensions */,
 				F6A0C6541D0BEC6A00255599 /* images */,
 				1A1CF3671626CEFF00AFC938 /* ipad */,
@@ -862,6 +868,7 @@
 		BF23D4E2143315EB00657E08 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F65F17E71D2555EA007B0606 /* tilemap */,
 				29EFDD201D212C2E00B3B4D3 /* plist  */,
 				29F0CB9B1D1A7406002BA23C /* touch */,
 				299E1EC31D192B3C00D3B12E /* datapesistent */,
@@ -1737,6 +1744,15 @@
 			path = Trigger;
 			sourceTree = "<group>";
 		};
+		F65F17E71D2555EA007B0606 /* tilemap */ = {
+			isa = PBXGroup;
+			children = (
+				F65F17E81D25564E007B0606 /* TilemapTest.cpp */,
+				F65F17E91D25564E007B0606 /* TilemapTest.h */,
+			);
+			name = tilemap;
+			sourceTree = "<group>";
+		};
 		F6A0C6491D0BE4D100255599 /* sprite */ = {
 			isa = PBXGroup;
 			children = (
@@ -1851,6 +1867,7 @@
 				F6551F431D19930B00132FB7 /* CocoStudio.lua in Resources */,
 				1A1CF3691626CEFF00AFC938 /* ipad in Resources */,
 				1A1CF36A1626CEFF00AFC938 /* ipadhd in Resources */,
+				F65F17E61D25559E007B0606 /* tilemap in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1889,6 +1906,7 @@
 				F6551F871D1993D600132FB7 /* CCBValue.cpp in Sources */,
 				F6551E071D19930A00132FB7 /* lua_cocos2dx_extensions_manual.cpp in Sources */,
 				F6551F471D19930B00132FB7 /* tolua_is.c in Sources */,
+				F65F17EA1D25564E007B0606 /* TilemapTest.cpp in Sources */,
 				F65520CD1D1995AD00132FB7 /* SkeletonRenderer.cpp in Sources */,
 				F65523451D199E3F00132FB7 /* CCDisplayManager.cpp in Sources */,
 				F655235D1D199E3F00132FB7 /* UIScrollView.cpp in Sources */,
