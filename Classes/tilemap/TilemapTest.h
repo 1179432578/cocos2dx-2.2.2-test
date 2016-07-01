@@ -34,6 +34,7 @@ private:
     CCMoveTo *mt;
     CCTMXTiledMap *map;
     CCAnimate* animate[4];
+    CCTMXLayer *collision;
 };
 
 

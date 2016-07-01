@@ -74,10 +74,20 @@ bool TilemapTest::init(){
         animate[i]->retain();
     }
     
+    //获得地图不可到达区域，然后移动时，使用A*算法，获得行走路径
+    collision = map->layerNamed("collision");
+    collision->setVisible(false);
+    
     return true;
 }
 
 bool TilemapTest::ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent){
+    //判断目的地是否不可达，for test
+    CCSprite *tile = collision->tileAt(collision->convertToNodeSpace(pTouch->getLocation()) / map->getTileSize().width);
+    if (!tile) {
+        return false;
+    }
+    
     CCPoint targetPos = pTouch->getLocation();
     CCPoint targetPosInParent = role->getParent()->convertToNodeSpace(targetPos);
     CCPoint rolePos = role->getPosition();

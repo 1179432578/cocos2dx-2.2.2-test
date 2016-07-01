@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" renderorder="right-down" width="40" height="40" tilewidth="32" tileheight="32" nextobjectid="6">
- <tileset firstgid="1" name="tiles1" tilewidth="32" tileheight="32" tilecount="192" columns="16">
+ <tileset firstgid="1" name="tiles1" tilewidth="32" tileheight="32">
   <image source="tiles1.png" width="512" height="384"/>
  </tileset>
- <tileset firstgid="193" name="tiles2" tilewidth="32" tileheight="32" tilecount="192" columns="16">
+ <tileset firstgid="193" name="tiles2" tilewidth="32" tileheight="32">
   <image source="tiles2.png" width="512" height="384"/>
  </tileset>
- <tileset firstgid="385" name="tile3" tilewidth="32" tileheight="32" tilecount="256" columns="16">
+ <tileset firstgid="385" name="tile3" tilewidth="32" tileheight="32">
   <image source="tile3.png" width="512" height="512"/>
  </tileset>
  <layer name="mapdown" width="40" height="40">
@@ -19,7 +19,7 @@
    eJztlUsOgjAQhsGNUeNjZ3wkGnY+FsZb6Q30ZhyBY7DxDmp8zESbmMbCtKUwYr+kuw58dP4OQfAbnMOqDbJpNao28NSRB+aecbb64DZg7PdvXCAvV8azsg1Z6RjmZQR1Y8ZZW4Db0sLvFH5fXFD56Tim772xouZe0Pfq+KFTKu1JFDW9kvMn3GQ/E5oFu8tOqp5SGRL8ZrBnTvwOSk9tnWUicNvk+GX1VJ5xqhzKUHqLbpFlBkxnHKW36LZlMN9VZ2lzdnHO3NNBdZY2fiJn1LyZYJs913i/F6YZdXV30UcsxGVGdUGn5GNxg6OThyc7uL97xzNmAs+fGr7jAHVHg9qbxh1YwfPXJf8Husz/Ox5PXXkCfDg0kw==
   </data>
  </layer>
- <objectgroup name="npc">
+ <objectgroup name="npc" visible="0">
   <object id="1" name="0001" x="543" y="224" width="32" height="32"/>
   <object id="4" name="0002" x="1089" y="356" width="29" height="28"/>
   <object id="5" name="0003" x="227" y="929" width="26" height="29">
@@ -28,4 +28,9 @@
    </properties>
   </object>
  </objectgroup>
+ <layer name="collision" width="40" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztmEsOgCAMBeEgev9reDNj2BBCSz8gT9NJuqJpx5IomNJ+jkxHnWOt01vTeI1qj/wkdbja1PPVfaU1uHra0PTd4afpieKn7SHx0rq2+Z4ZULlXKkHVtDhbPHs5Ukaz8rpZ6vX20Itn7pzfTGb5rSL85B7IoPtxoLtL/M5cApVdfuizQ/eroVwR3B7Q/SjQ/f7wftwJul8QaEA4/7bncIS7g+R+TrHqG0859fK49dl+1v8Wb+2v599PEHydGw50JGA=
+  </data>
+ </layer>
 </map>
