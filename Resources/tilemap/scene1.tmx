@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" renderorder="right-down" width="40" height="40" tilewidth="32" tileheight="32" nextobjectid="6">
- <tileset firstgid="1" name="tiles1" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="tiles1" tilewidth="32" tileheight="32" tilecount="192" columns="16">
   <image source="tiles1.png" width="512" height="384"/>
  </tileset>
- <tileset firstgid="193" name="tiles2" tilewidth="32" tileheight="32">
+ <tileset firstgid="193" name="tiles2" tilewidth="32" tileheight="32" tilecount="192" columns="16">
   <image source="tiles2.png" width="512" height="384"/>
  </tileset>
- <tileset firstgid="385" name="tile3" tilewidth="32" tileheight="32">
+ <tileset firstgid="385" name="tile3" tilewidth="32" tileheight="32" tilecount="256" columns="16">
   <image source="tile3.png" width="512" height="512"/>
  </tileset>
  <layer name="mapdown" width="40" height="40">

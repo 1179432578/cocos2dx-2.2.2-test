@@ -105,6 +105,9 @@ bool HelloWorld::init()
     //tilemap test
     CREATEBTN(TilemapTest, 450)
     
+    //particle test
+    CREATEBTN(ParticleTest, 400)
+    
     return true;
 }
 

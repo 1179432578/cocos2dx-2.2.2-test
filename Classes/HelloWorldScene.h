@@ -9,6 +9,7 @@
 #include "TouchTest.h"
 #include "PlistTest.h"
 #include "TilemapTest.h"
+#include "ParticleTest.h"
 
 #define TESTSCENE(SceneName) \
 void SceneName##Test(CCObject *pSender){ \
@@ -73,6 +74,11 @@ public:
     
     //tilemap test
     TESTSCENE(TilemapTest);
+    
+    //particle test
+    TESTSCENE(ParticleTest);
+    
+    
 };
 
 

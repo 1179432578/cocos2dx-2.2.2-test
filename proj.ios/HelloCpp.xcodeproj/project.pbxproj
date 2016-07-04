@@ -38,6 +38,7 @@
 		F601275E1D16801400D7513F /* ControllerScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F601275C1D16801400D7513F /* ControllerScene.cpp */; };
 		F601277B1D16EA6800D7513F /* SceneTransform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F60127791D16EA6800D7513F /* SceneTransform.cpp */; };
 		F615BBDC1D183F970004B297 /* action.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F615BBDA1D183F970004B297 /* action.cpp */; };
+		F61B34B01D2AB99D006CBAC7 /* ParticleTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F61B34AE1D2AB99D006CBAC7 /* ParticleTest.cpp */; };
 		F6551B0A1D19921D00132FB7 /* CCControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6551A121D19921C00132FB7 /* CCControl.cpp */; };
 		F6551B0B1D19921D00132FB7 /* CCControlButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6551A141D19921C00132FB7 /* CCControlButton.cpp */; };
 		F6551B0C1D19921D00132FB7 /* CCControlColourPicker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6551A161D19921C00132FB7 /* CCControlColourPicker.cpp */; };
@@ -316,6 +317,8 @@
 		F601277A1D16EA6800D7513F /* SceneTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SceneTransform.h; path = scene/SceneTransform.h; sourceTree = "<group>"; };
 		F615BBDA1D183F970004B297 /* action.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = action.cpp; path = action/action.cpp; sourceTree = "<group>"; };
 		F615BBDB1D183F970004B297 /* action.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = action.h; path = action/action.h; sourceTree = "<group>"; };
+		F61B34AE1D2AB99D006CBAC7 /* ParticleTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ParticleTest.cpp; path = particle/ParticleTest.cpp; sourceTree = "<group>"; };
+		F61B34AF1D2AB99D006CBAC7 /* ParticleTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParticleTest.h; path = particle/ParticleTest.h; sourceTree = "<group>"; };
 		F6551A121D19921C00132FB7 /* CCControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCControl.cpp; sourceTree = "<group>"; };
 		F6551A131D19921C00132FB7 /* CCControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCControl.h; sourceTree = "<group>"; };
 		F6551A141D19921C00132FB7 /* CCControlButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCControlButton.cpp; sourceTree = "<group>"; };
@@ -868,6 +871,7 @@
 		BF23D4E2143315EB00657E08 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F61B34AB1D2AB940006CBAC7 /* particles */,
 				F65F17E71D2555EA007B0606 /* tilemap */,
 				29EFDD201D212C2E00B3B4D3 /* plist  */,
 				29F0CB9B1D1A7406002BA23C /* touch */,
@@ -945,6 +949,15 @@
 				299E1EC01D19136600D3B12E /* action2.h */,
 			);
 			name = action;
+			sourceTree = "<group>";
+		};
+		F61B34AB1D2AB940006CBAC7 /* particles */ = {
+			isa = PBXGroup;
+			children = (
+				F61B34AE1D2AB99D006CBAC7 /* ParticleTest.cpp */,
+				F61B34AF1D2AB99D006CBAC7 /* ParticleTest.h */,
+			);
+			name = particles;
 			sourceTree = "<group>";
 		};
 		F65519401D19921C00132FB7 /* extensions */ = {
@@ -2012,6 +2025,7 @@
 				F65523621D199E3F00132FB7 /* UILabelAtlas.cpp in Sources */,
 				F6551E0E1D19930A00132FB7 /* tolua_fix.c in Sources */,
 				F65523401D199E3F00132FB7 /* CCBone.cpp in Sources */,
+				F61B34B01D2AB99D006CBAC7 /* ParticleTest.cpp in Sources */,
 				F65523441D199E3F00132FB7 /* CCDisplayFactory.cpp in Sources */,
 				F6551E051D19930A00132FB7 /* Cocos2dxLuaLoader.cpp in Sources */,
 				F655236D1D199E3F00132FB7 /* TriggerObj.cpp in Sources */,
