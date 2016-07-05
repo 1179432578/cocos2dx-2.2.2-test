@@ -10,6 +10,7 @@
 #include "PlistTest.h"
 #include "TilemapTest.h"
 #include "ParticleTest.h"
+#include "BatchTest.h"
 
 #define TESTSCENE(SceneName) \
 void SceneName##Test(CCObject *pSender){ \
@@ -78,7 +79,9 @@ public:
     //particle test
     TESTSCENE(ParticleTest);
     
-    
+    //batch test
+    TESTSCENE(BatchTest);
+
 };
 
 

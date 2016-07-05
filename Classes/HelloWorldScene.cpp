@@ -108,6 +108,9 @@ bool HelloWorld::init()
     //particle test
     CREATEBTN(ParticleTest, 400)
     
+    //Batch test
+    CREATEBTN(BatchTest, 350)
+    
     return true;
 }
 
@@ -204,6 +207,6 @@ IMPLEMENT(ActionScene)
 /*创建一个场景进行Plist测试*/
 IMPLEMENT(PlistTest)
 
-
-
+/*创建一个场景进行批处理节点测试*/
+IMPLEMENT(BatchTest)
 
