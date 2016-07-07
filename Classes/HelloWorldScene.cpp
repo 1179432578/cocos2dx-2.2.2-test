@@ -108,8 +108,11 @@ bool HelloWorld::init()
     //particle test
     CREATEBTN(ParticleTest, 400)
     
-    //Batch test
+    //batch test
     CREATEBTN(BatchTest, 350)
+    
+    //curl test
+    CREATEBTN(CurlTest, 300)
     
     return true;
 }
@@ -209,4 +212,7 @@ IMPLEMENT(PlistTest)
 
 /*创建一个场景进行批处理节点测试*/
 IMPLEMENT(BatchTest)
+
+/*创建一个场景进行网络测试*/
+IMPLEMENT(CurlTest)
 

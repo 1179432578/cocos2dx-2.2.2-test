@@ -19,6 +19,8 @@
 		29EFDD231D212CA700B3B4D3 /* PlistTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29EFDD211D212CA700B3B4D3 /* PlistTest.cpp */; };
 		29F0CB971D1A51E1002BA23C /* extensions in Resources */ = {isa = PBXBuildFile; fileRef = 29F0CB961D1A51E1002BA23C /* extensions */; };
 		29F0CB9E1D1A7429002BA23C /* TouchTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29F0CB9C1D1A7429002BA23C /* TouchTest.cpp */; };
+		29F47F6E1D2E3A81009EF3CA /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29F47F6D1D2E3A81009EF3CA /* libcurl.a */; };
+		29F47F721D2E3B0A009EF3CA /* CurlTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29F47F701D2E3B0A009EF3CA /* CurlTest.cpp */; };
 		BF1373EF128A898400D9F789 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF492D4B1289302400A09262 /* OpenGLES.framework */; };
 		BF1373F0128A899500D9F789 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF492C21128924A800A09262 /* libxml2.dylib */; };
 		BF1373F1128A899E00D9F789 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF492B6912891AC600A09262 /* libz.dylib */; };
@@ -290,6 +292,9 @@
 		29F0CB961D1A51E1002BA23C /* extensions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = extensions; sourceTree = "<group>"; };
 		29F0CB9C1D1A7429002BA23C /* TouchTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TouchTest.cpp; path = touch/TouchTest.cpp; sourceTree = "<group>"; };
 		29F0CB9D1D1A7429002BA23C /* TouchTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TouchTest.h; path = touch/TouchTest.h; sourceTree = "<group>"; };
+		29F47F6D1D2E3A81009EF3CA /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../../cocos2dx/platform/third_party/mac/libraries/libcurl.a; sourceTree = "<group>"; };
+		29F47F701D2E3B0A009EF3CA /* CurlTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CurlTest.cpp; path = curl/CurlTest.cpp; sourceTree = "<group>"; };
+		29F47F711D2E3B0A009EF3CA /* CurlTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CurlTest.h; path = curl/CurlTest.h; sourceTree = "<group>"; };
 		781C33B11547F06B00633F88 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		781C33B31547F06B00633F88 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		781C33B51547F06B00633F88 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -753,6 +758,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29F47F6E1D2E3A81009EF3CA /* libcurl.a in Frameworks */,
 				F655229B1D199CD800132FB7 /* AudioToolbox.framework in Frameworks */,
 				F60127561D166A2200D7513F /* libcocos2dx.a in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
@@ -820,6 +826,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				29F47F6D1D2E3A81009EF3CA /* libcurl.a */,
 				F65522A01D199D9100132FB7 /* CoreGraphics.framework */,
 				F655229E1D199D8400132FB7 /* QuartzCore.framework */,
 				F655229C1D199D7E00132FB7 /* UIKit.framework */,
@@ -859,6 +866,15 @@
 			name = touch;
 			sourceTree = "<group>";
 		};
+		29F47F6F1D2E3ADB009EF3CA /* curl */ = {
+			isa = PBXGroup;
+			children = (
+				29F47F701D2E3B0A009EF3CA /* CurlTest.cpp */,
+				29F47F711D2E3B0A009EF3CA /* CurlTest.h */,
+			);
+			name = curl;
+			sourceTree = "<group>";
+		};
 		784521C214EBA449009D533B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -883,6 +899,7 @@
 		BF23D4E2143315EB00657E08 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				29F47F6F1D2E3ADB009EF3CA /* curl */,
 				2972F0B01D2B4DFE00E76C2C /* batchnode */,
 				F61B34AB1D2AB940006CBAC7 /* particles */,
 				F65F17E71D2555EA007B0606 /* tilemap */,
@@ -1968,6 +1985,7 @@
 				F6551E021D19930A00132FB7 /* CCLuaEngine.cpp in Sources */,
 				F65520E81D1995AD00132FB7 /* SlotData.c in Sources */,
 				F6551E0A1D19930A00132FB7 /* Lua_web_socket.cpp in Sources */,
+				29F47F721D2E3B0A009EF3CA /* CurlTest.cpp in Sources */,
 				F6551F891D1993D600132FB7 /* CCControlLoader.cpp in Sources */,
 				F6551F8E1D1993D600132FB7 /* CCLayerGradientLoader.cpp in Sources */,
 				F6551E1D1D19930A00132FB7 /* lmem.c in Sources */,

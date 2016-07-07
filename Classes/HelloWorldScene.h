@@ -11,6 +11,7 @@
 #include "TilemapTest.h"
 #include "ParticleTest.h"
 #include "BatchTest.h"
+#include "CurlTest.h"
 
 #define TESTSCENE(SceneName) \
 void SceneName##Test(CCObject *pSender){ \
@@ -81,7 +82,9 @@ public:
     
     //batch test
     TESTSCENE(BatchTest);
-
+    
+    //curl test
+    TESTSCENE(CurlTest);
 };
 
 
