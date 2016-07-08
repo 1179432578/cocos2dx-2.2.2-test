@@ -68,7 +68,7 @@ private:
     CCSprite *m_sp1;
     CCSprite *m_sp2;
     enum ActionState {MOVE, ROTATION, SCALE};
-    ActionState m_action = MOVE;
+    ActionState m_action;
     CCLabelTTF *m_label;
 };
 

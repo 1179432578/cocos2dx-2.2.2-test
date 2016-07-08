@@ -30,17 +30,17 @@ done
 
 # read local.properties
 
-_LOCALPROPERTIES_FILE=$(dirname "$0")"/local.properties"
-if [ -f "$_LOCALPROPERTIES_FILE" ]
-then
-    [ -r "$_LOCALPROPERTIES_FILE" ] || die "Fatal Error: $_LOCALPROPERTIES_FILE exists but is unreadable"
-
-    # strip out entries with a "." because Bash cannot process variables with a "."
-    _PROPERTIES=`sed '/\./d' "$_LOCALPROPERTIES_FILE"`
-    for line in "$_PROPERTIES"; do
-        declare "$line";
-    done
-fi
+# _LOCALPROPERTIES_FILE=$(dirname "$0")"/local.properties"
+# if [ -f "$_LOCALPROPERTIES_FILE" ]
+# then
+#     [ -r "$_LOCALPROPERTIES_FILE" ] || die "Fatal Error: $_LOCALPROPERTIES_FILE exists but is unreadable"
+#
+#     # strip out entries with a "." because Bash cannot process variables with a "."
+#     _PROPERTIES=`sed '/\./d' "$_LOCALPROPERTIES_FILE"`
+#     for line in "$_PROPERTIES"; do
+#         declare "$line";
+#     done
+# fi
 
 # paths
 
@@ -51,7 +51,7 @@ fi
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # ... use paths relative to current directory
-COCOS2DX_ROOT="$DIR/../../../.."
+COCOS2DX_ROOT="$DIR/../../.."
 APP_ROOT="$DIR/.."
 APP_ANDROID_ROOT="$DIR"
 
